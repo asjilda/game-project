@@ -17,7 +17,7 @@ def decide_winner (player, computer):
         return "computer"
 
 def get_player_choice():
-    choice = input("Enter your choice: 1. rock, 2. paper, 3. scissors): ").strip()
+    choice = input("Enter your choice: 1. rock, 2. paper, 3. scissors: ").strip()
     while choice not in ('1', '2', '3'):
         choice = input("Please enter 1, 2, or 3: ").strip()
     return int(choice)
@@ -41,6 +41,6 @@ if __name__ == "__main__":
         while True:
             rps_game()
             again = input("Do you want to play again? ").strip().lower()
-            if again not in ('Y', 'YES'):
+            if again not in ('y', 'yes'):
                 break
     print("Thank you for playing!")
